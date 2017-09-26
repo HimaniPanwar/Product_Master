@@ -1,0 +1,83 @@
+@import url("index.css");
+      .jumbotron.container {
+           margin-top: 8rem;
+           background-color: transparent;
+           border: 1px solid #145A32;
+           border-radius: 10px;
+           margin-bottom: 17rem;
+       }
+       input#textInput{
+          margin-left: 35%;
+       }
+       input#submit{
+          margin-left: 45.5%;
+          margin-bottom: 4rem;
+       }
+       .text-center {
+          text-align: center;
+          font-family: 'Montserrat',sans-serif;
+       }
+       p#result{
+          text-align: center;
+       }
+       @media(max-width: 320px){
+          .jumbotron.container{
+              width: 95%;
+          }
+          input#textInput{
+              width: 80%;
+              margin-left: 3rem;
+          }
+          input#submit{
+              margin-left: 8.5rem;
+          }
+
+       }
+        @media(max-width: 375px) and (min-width: 330px){
+          .jumbotron.container{
+              width: 95%;
+          }
+          input#textInput{
+              width: 80%;
+              margin-left: 3.5rem;
+          }
+          input#submit{
+              margin-left: 12rem;
+          }
+       }
+       @media(max-width: 425px) and (min-width: 380px){
+          .jumbotron.container{
+              width: 95%;
+          }
+          input#textInput{
+              width: 80%;
+              margin-left: 3.5rem;
+          }
+          input#submit{
+              margin-left: 13.5rem;
+          }
+       }
+       @media(max-width: 768px) and (min-width: 450px){
+          .jumbotron.container{
+              width: 95%;
+          }
+          input#submit{
+              margin-left: 30rem;
+          }
+       }
+      @media(max-width: 1024px) and (min-width: 999px){
+         input#submit{
+            margin-left: 42rem;
+         }
+      }
+      @media(max-height: 1366px) and (min-height: 1200px){
+         #contact{
+            margin-top: 12rem;
+         }
+         .jumbotron.container{
+            padding: 14rem 0rem;
+         }
+          input#submit{
+              margin-left: 43rem;
+          }
+      }
