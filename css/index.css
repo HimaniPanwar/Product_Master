@@ -180,16 +180,15 @@ button.main_item{
     cursor: pointer;
     width: 99%;
     background-color: transparent;
-    border: 1px solid #0B5345;
+    border: 2px solid #0B5345;
     border-radius: 10px;
     outline-style: none;
     padding: 3rem 0rem;
     letter-spacing: 0.3rem;
 }
 button.main_item:hover{
-    background-color: #5F6A6A;
-    border: 1px solid white;
-    color: white;
+    border:2px solid #5F6A6A;
+    color: #5F6A6A;
 
 }
 .overlay {
