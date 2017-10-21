@@ -42,72 +42,6 @@
    <hr>
    <div class= "row" id="maincat_row"></div>
 </div>
-<!--<div id="ic1" class="overlay">
-  <a href="javascript:void(0)" class="closebtn">&times;</a>
-  <div class="overlay-content">
-     <div class="row">
-      <div class="col-md-6">
-        <img id="img1" src="http://www.homedepot.com/catalog/productImages/1000/2d/2d504d9b-23b7-401f-9966-f2ce2d3ef079_1000.jpg"/>
-      </div>
-      <div class="col-md-6">
-        <div class="head">
-          Look here
-        </div>
-        <form>
-             <input type="text" class="form-control" id="autocomplete1" placeholder="Search..">
-              <div id="outputbox">
-                  <p id="outputcontent1"></p>
-              </div>
-             <input type="button" value="Submit" id="sub" style="outline: none;">
-        </form>
-      </div>
-     </div>
-  </div>
-</div>
-<div id="ic2" class="overlay">
-  <a href="javascript:void(0)" class="closebtn">&times;</a>
-  <div class="overlay-content">
-    <div class="row">
-      <div class="col-md-6">
-        <img id="img2" src="http://www.homedepot.com/catalog/productImages/1000/c7/c7d155d5-054e-46cb-9d79-7b5093c6756c_1000.jpg"/>
-      </div>
-      <div class="col-md-6">
-        <div class="head">
-          Look here
-        </div>
-        <form>
-             <input type="text" class="form-control" id="autocomplete2" placeholder="Search..">
-              <div id="outputbox">
-                  <p id="outputcontent2"></p>
-              </div>
-             <input type="button" value="Submit" id="sub" style="outline: none;">
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="ic3" class="overlay">
-  <a href="javascript:void(0)" class="closebtn">&times;</a>
-  <div class="overlay-content">
-    <div class="row">
-      <div class="col-md-6">
-        <img id="img3" src="http://www.royaletouche.com/products/1mm/textures/hard_rock/Manufacturer_Exterior_Claddings_in_Armenia.jpg"/>
-      </div>
-      <div class="col-md-6">
-        <div class="head">
-          Look here
-        </div>
-       <form>
-             <input type="text" class="form-control" id="autocomplete3" placeholder="Search..">
-              <div id="outputbox">
-                  <p id="outputcontent3"></p>
-              </div>
-             <input type="button" value="Submit" id="sub" style="outline: none;">
-        </form>
-      </div>
-   </div>
-  </div>
-</div>-->
 <section id="contact">
         <div class="container">
             <div class="row">
@@ -141,7 +75,16 @@
             } 
           }
         );
-      
+        var url= 'https://flourishstock.herokuapp.com/stocks/getMainCategory';
+        $.ajax({
+          type: 'POST',
+          url: url,
+          // send the id from localstorage to API.
+          data: {warehouse_Id: '2' },
+          success: function(wb){
+            console.log(wb);
+          }
+        });
         $(document).on("click", ".main_item", function(e){
           var id = $(this).attr('id');
           // store ID of main category in storage
