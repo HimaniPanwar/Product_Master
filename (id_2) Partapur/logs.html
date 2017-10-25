@@ -44,7 +44,7 @@
 <table id="result" class="table table-striped animated fadeIn">
    <tr>
      <th>Type</th>
-     <th>Product</th>
+     <th id="prodLog">Product</th>
      <th>Quantity</th>
    </tr>
 </table>
@@ -69,13 +69,13 @@
 </section>
    <script type="text/javascript">
    	  $(document).ready(function(e){
-         $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/logs',
+         $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/logs',
                       function(wb){
                       	
                          for(i in wb.recentlog){
                             var recent_Log = wb.recentlog[i];
                             console.log(recent_Log);
-                            $("#result").append('<tr><td>'+ recent_Log.type + '</td><td>' + recent_Log.product + '</td><td>' + ' '+ recent_Log.quantity+ '</td>\
+                            $("#result").append('<tr><td>'+ recent_Log.type + '</td><td id="prodLog">' + recent_Log.product + '</td><td>' + ' '+ recent_Log.quantity+ '</td>\
                               </tr>');
                          } 
                       

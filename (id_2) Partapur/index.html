@@ -64,7 +64,7 @@
 <script type="text/javascript">
       $(document).ready(function(){
 
-        $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/getMainCategory',
+        $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getMainCategory',
           function(wb){
             for(i in wb.allcat){
               var maincat = wb.allcat[i];
@@ -75,7 +75,7 @@
             } 
           }
         );
-        var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/getMainCategory';
+       var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getMainCategory';
         $.ajax({
           type: 'POST',
           url: url,
