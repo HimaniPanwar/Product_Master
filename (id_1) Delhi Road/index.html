@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Return</title>
-	<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <title>API</title>
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
@@ -12,12 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <style type="text/css">
-       @import url("css/index.css");
-       @import url("css/sale.css");
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
@@ -39,15 +37,12 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron container animated fadeIn">
-        <h3 class="text-center">ENTER THE QUANTITY TO BE RETURNED</h3>
-        <form>
-           <input type="text" class="form-control" id="textInput" placeholder="Enter here...">
-           <input type="button" value="Submit" id="submit" style="outline-style: none;">
-        </form>
-        <p id="result"></p>
-    </div>
-    <section id="contact">
+<div class="container animated fadeIn">
+   <h1 class="text-center heading">Main Categories</h1>
+   <hr>
+   <div class= "row" id="maincat_row"></div>
+</div>
+<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -61,27 +56,43 @@
               <li><a href="https://www.google.com/gmail/"><i class="fa fa-google fa-2x"></i></a></li>
               <li><a href="https://github.com"><i class="fa fa-github fa-2x"></i></a></li>
               <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            </ul>   
+            </ul>
         </div>
-        <a href="return.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-    </section>
-  <script type="text/javascript">
-   $(document).ready(function(e){
-     $(document).on("click","#submit",function(e){
-          var url= 'https://flourishstock.herokuapp.com/stocks/returnstock';
-          $.ajax({
-            type: 'POST',
-            url: url,
-            data: {id: localStorage.getItem('inventory') ,quantity: $('#textInput').val()},
-            success: 
-                function(wb){
-                    console.log(wb);
-                    $('#result').text(wb.message);    
-                }
-            
-           });        
-     }); 
-   }); 
-  </script>
+        <a href="index.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+</section>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+
+        $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/getMainCategory',
+          function(wb){
+            for(i in wb.allcat){
+              var maincat = wb.allcat[i];
+              console.log(maincat);
+              $("#maincat_row").append('<div class="col-md-4 col-md-4 col-xs-12 thumb">\
+                <p id="result"><button class="main_item" id='+maincat.id+'>'+ maincat.name + '</button></p>\
+                </div>');
+            } 
+          }
+        );
+        var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/getMainCategory';
+        $.ajax({
+          type: 'POST',
+          url: url,
+          // send the id from localstorage to API.
+          data: {id: '1' },
+          success: function(wb){
+            console.log(wb);
+          }
+        });
+        $(document).on("click", ".main_item", function(e){
+          var id = $(this).attr('id');
+          // store ID of main category in storage
+          localStorage.setItem('main_cat',id);
+          window.location.href = "sub_cat.html";
+        });
+      });
+</script>
+
 </body>
 </html>

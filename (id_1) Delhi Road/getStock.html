@@ -12,10 +12,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/inventory.css">
+  <style type="text/css">
+       @import url("css/index.css");
+       @import url("css/sale.css");
+  </style>
 </head>
 <body>
-   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
             <div class="navbar-header">
@@ -36,24 +39,15 @@
             </div>
         </div>
     </nav>
-    <div class="container animated fadeIn">
-   <h1 class="text-center heading">Inventory</h1>
-   <hr>
-    <p id="result">
-      <div class="row">
-        <div class="col-lg-4">
-          <button type="button" class="btn btn-circle" id="btn1" style="outline-style: none;"><span id="text1">SALE</span></button>
-        </div>
-        <div class="col-lg-4">
-          <button type="button" class="btn btn-circle" id="btn2" style="outline-style: none;"><span id="text2">RETURN<br> STOCK</span></button>
-        </div>
-        <div class="col-lg-4">
-          <button type="button" class="btn btn-circle" id="btn3" style="outline-style: none;"><span id="text3">GET <br> STOCK</span></button>
-        </div>
-      </div>
-    </p>
-   </div>
-   <section id="contact">
+    <div class="jumbotron container animated fadeIn">
+        <h3 class="text-center">ENTER THE QUANTITY TO BE ADDED TO STOCK</h3>
+        <form>
+           <input type="text" class="form-control" id="textInput" placeholder="Enter here...">
+           <input type="button" value="Submit" id="submit" style="outline-style: none;">
+        </form>
+        <p id="result"></p>
+    </div>
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -69,26 +63,25 @@
               <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
             </ul>   
         </div>
-        <a href="inventory.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-   </section>
-   <script type="text/javascript">
-   	 $(document).ready(function(){
-   	    var id= localStorage.getItem('prod');
-   	    
-   	    localStorage.setItem('inventory',id);
-        $(document).on("click","#btn1",function(e){
-            window.location.href="sale.html";
-        });
-        $(document).on("click","#btn2", function(e){
-            window.location.href="return.html";
-        });
-        $(document).on("click","#btn3", function(e){
-            window.location.href="getStock.html";
-        });
-        $(document).on("click","#btn4", function(e){
-            window.location.href="logs.html";
-        });
-   	 });
-   </script>
+        <a href="getStock.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    </section>
+  <script type="text/javascript">
+   $(document).ready(function(e){
+     $(document).on("click","#submit",function(e){
+          var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/getStock';
+          $.ajax({
+            type: 'POST',
+            url: url,
+            data: {id: localStorage.getItem('inventory') ,quantity: $('#textInput').val()},
+            success: 
+                function(wb){
+                    console.log(wb);
+                    $('#result').text(wb.message);    
+                }
+            
+           });        
+     }); 
+   }); 
+  </script>
 </body>
 </html>

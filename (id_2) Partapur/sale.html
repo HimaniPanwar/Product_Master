@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Return</title>
+	<title>Sale</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -12,13 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <style type="text/css">
-       @import url("css/index.css");
-       @import url("css/sale.css");
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/sale.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
             <div class="navbar-header">
@@ -40,7 +37,7 @@
         </div>
     </nav>
     <div class="jumbotron container animated fadeIn">
-        <h3 class="text-center">ENTER THE QUANTITY TO BE RETURNED</h3>
+        <h3 class="text-center">UPDATE THE SALES</h3>
         <form>
            <input type="text" class="form-control" id="textInput" placeholder="Enter here...">
            <input type="button" value="Submit" id="submit" style="outline-style: none;">
@@ -61,14 +58,14 @@
               <li><a href="https://www.google.com/gmail/"><i class="fa fa-google fa-2x"></i></a></li>
               <li><a href="https://github.com"><i class="fa fa-github fa-2x"></i></a></li>
               <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            </ul>   
+            </ul>    
         </div>
-        <a href="return.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-    </section>
+        <a href="sale.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+  </section>
   <script type="text/javascript">
    $(document).ready(function(e){
      $(document).on("click","#submit",function(e){
-          var url= 'https://flourishstock.herokuapp.com/stocks/returnstock';
+          var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/sale'
           $.ajax({
             type: 'POST',
             url: url,

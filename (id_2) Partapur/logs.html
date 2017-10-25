@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Josefin+Slab|Libre+Baskerville|Lobster|Lobster+Two|Montserrat|Nunito|Playfair+Display+SC|Poiret+One|Questrial|Quicksand|Roboto|Sanchez|Varela+Round" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Josefin+Slab|Libre+Baskerville|Lobster|Lobster+Two|Montserrat|Nunito|Playfair+Display+SC|Poiret+One|Questrial|Quicksand|Roboto|Sanchez|Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora|Quicksand|Roboto|Roboto+Slab" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/product.css">
+  <link rel="stylesheet" type="text/css" href="css/logs.css">
 </head>
 <body>
-   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
             <div class="navbar-header">
@@ -35,13 +35,21 @@
                 </ul>
             </div>
         </div>
- </nav>
- <div class="container animated fadeIn">
-   <h1 class="text-center heading">Products</h1>
+</nav>
+<div class="container animated fadeIn">
+   <h1 class="text-center heading">Logs</h1>
    <hr>
-   <div class= "row" id="prod_item"></div>
- </div>
-   <section id="contact">
+</div>
+<div class="container">
+<table id="result" class="table table-striped animated fadeIn">
+   <tr>
+     <th>Type</th>
+     <th>Product</th>
+     <th>Quantity</th>
+   </tr>
+</table>
+</div>
+<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -55,37 +63,25 @@
               <li><a href="https://www.google.com/gmail/"><i class="fa fa-google fa-2x"></i></a></li>
               <li><a href="https://github.com"><i class="fa fa-github fa-2x"></i></a></li>
               <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            </ul>     
+            </ul>
         </div>
-        <a href="product.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-    </section>
+        <a href="index.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+</section>
    <script type="text/javascript">
-   	 $(document).ready(function(){
-        var url= 'https://flourishstock.herokuapp.com/stocks/getProducts';
-        $.ajax({
-          type: 'POST',
-          url: url,
-           // send the id from localstorage to API.
-          data: {id: localStorage.getItem('sub_cat')},
-          success: 
-            function(wb){
-              console.log(wb);
-              for(i in wb.allproducts){
-                $prod = wb.allproducts[i];
-                $("#prod_item").append('<div class="col-md-4 col-md-4 col-xs-12 thumb">\
-                <p id="result"><button class="product" id='+$prod.id+'>'+$prod.name+'<hr class="segment"><p class="productD" id='+$prod.id+'><b>Size:</b>'+' '+$prod.size+'<br><b>Quantity:</b>'+' '+$prod.quantity+'</p></button></p>\
-                </div>');
-              }
-            }
-          });
-
-      $(document).on("click", ".product", function(e){
-        var id = $(this).attr('id');
-        // store ID of sub category in storage
-        localStorage.setItem('prod',id);
-        window.location.href="inventory.html";
-      });
-   	 });
+   	  $(document).ready(function(e){
+         $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/logs',
+                      function(wb){
+                      	
+                         for(i in wb.recentlog){
+                            var recent_Log = wb.recentlog[i];
+                            console.log(recent_Log);
+                            $("#result").append('<tr><td>'+ recent_Log.type + '</td><td>' + recent_Log.product + '</td><td>' + ' '+ recent_Log.quantity+ '</td>\
+                              </tr>');
+                         } 
+                      
+                         
+         });
+   	  });
    </script>
 </body>
 </html>
