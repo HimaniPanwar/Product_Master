@@ -42,7 +42,6 @@ hr.segment{
 }
 table,tr,th,td{
     text-align: center;
-    font-family: 'Montserrat',sans-serif;
 }
 th{
      text-transform: uppercase;
@@ -50,8 +49,6 @@ th{
      font-size: 16px;
      text-align: center;
      height: 60px;
-     font-family: 'Montserrat',sans-serif;
-     letter-spacing: 1px;
          
 }
 table#result{

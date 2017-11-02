@@ -1,44 +1,117 @@
  @import url("index.css");
-       table,tr,th,td{
-      	 text-align: center;
-      
-      }
-      th{
-         text-transform: uppercase;
-         color: #117864;
-         font-size: 15px;
-         margin-left: 5rem;
-      }
-      table#result{
-       
-        margin-top: 8rem;
-        margin-bottom: 15rem;
-      }
-      #prodLog{
-        padding-left: 12rem;
-      }
+
+#myTable{
+  color: #239B56;
+}
+
+table,tr,th,td{
+    text-align: center;
+}
+th{
+     text-transform: uppercase;
+     color: #117864;
+     font-size: 15px;
+     font-family: 'Quicksand',sans-serif;    
+}
+table#result{
+   margin-top: 4rem;
+   margin-bottom: 15rem;
+}
+#prodLog{
+   padding-left: 0rem;
+}
       @media (max-width: 320px){
         #prodLog{
-          padding-left: 4rem;
+          padding-left: 2rem;
+        }
+        .container{
+          width: 153%;
+        }
+        .container.contact.animated.fadeIn{
+          width: 153%;
+        }
+        .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+        .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+        .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+           width: 25%;
+           margin-left: 42rem;
         }
       }
        @media (max-width: 375px) and (min-width: 350px){
         #prodLog{
-          padding-left: 5rem;
+          padding-left: 2rem;
+        }
+        .container{
+          width: 137%;
+        }
+        .container.contact.animated.fadeIn{
+          width: 137%;
+        }
+        .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+        .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+        .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+           width: 25%;
+           margin-left: 45rem;
         }
       }
-       @media (max-width: 425px) and (min-width: 400px){
+       @media (max-width: 425px) and (min-width: 420px){
         #prodLog{
-          padding-left: 5rem;
+          padding-left: 2rem;
+        }
+        .container{
+          width: 118.5%;
+        }
+        .container.contact.animated.fadeIn{
+          width: 118.5%;
+        }
+        .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+        .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+        .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+           width: 25%;
+           margin-left: 44rem;
         }
       }
       @media (max-width: 768px) and (min-width: 500px){
         #prodLog{
-          padding-left: 9rem;
+          padding-left: 4rem;
         }
       }
        @media (max-width: 1024px) and (min-width: 900px){
         #prodLog{
-          padding-left: 9rem;
+          padding-left: 5rem;
+        }
+      }
+     @media (max-width: 360px) and (min-width: 330px ){
+        #prodLog{
+          padding-left: 2rem;
+        }
+        .container{
+          width: 153%;
+        }
+        .container.contact.animated.fadeIn{
+          width: 153%;
+        }
+        .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+        .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+        .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+           width: 25%;
+           margin-left: 48rem;
+        }
+      }
+      @media (max-width: 414px) and (min-width: 400px){
+        #prodLog{
+          padding-left: 2rem;
+        }
+        .container{
+          width: 124%;
+        }
+        .container.contact.animated.fadeIn{
+          width: 124%;
+        }
+        .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+        .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+        .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+           width: 25%;
+           margin-left: 44rem;
         }
       }

@@ -1,171 +1,117 @@
-@import url("index.css");
-button.product{
-    text-align: center;
-    text-transform: uppercase;
-    color: #0B5345;
-    font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 6rem;
-    font-size: 16px;
-    cursor: pointer;
-    width: 99%;
-    background-color: transparent;
-    border: 2px solid #0B5345;
-    border-radius: 10px;
-    outline-style: none;
-    padding-top: 1rem;
-}
-button.product:hover{
-    border: 2px solid #5F6A6A;
-    color: #5F6A6A;
+ @import url("index.css");
 
-}
-td.product{
-  cursor: pointer;
-}
-p.productD{
-    margin-top: -3rem;
-    font-size: 12px;
-    letter-spacing: 0.2rem;
-}
-hr.segment{
-  background-color: #239B56;
-  color: #239B56;
-  border: none; 
-  border-radius: 4px;   
-  margin-top: 1rem;
-  width: 5%;
-  height: 2px;
-}
 #myTable{
   color: #239B56;
 }
+
 table,tr,th,td{
     text-align: center;
-    font-family: 'Montserrat',sans-serif;
 }
 th{
      text-transform: uppercase;
      color: #117864;
-     font-size: 16px;
-     text-align: center;
-     height: 60px;
-     font-family: 'Montserrat',sans-serif;
-     letter-spacing: 1px;
+     font-size: 15px;
          
 }
 table#result{
-   margin-top: 8rem;
+   margin-top: 4rem;
    margin-bottom: 15rem;
 }
-
-td{
-  height: 50px;
-  font-size: 14px;
+#prodLog{
+   padding-left: 6rem;
 }
-#sizeCol{
-  padding-left: 12rem;
-}
- @media (max-width: 320px){
-        #sizeCol{
-          padding-left: 6rem;
+      @media (max-width: 320px){
+        #prodLog{
+          padding-left: 2rem;
         }
         .container{
           width: 153%;
         }
         .container.contact.animated.fadeIn{
           width: 153%;
-          padding-bottom: 37rem;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+           width: 25%;
            margin-left: 42rem;
         }
       }
        @media (max-width: 375px) and (min-width: 350px){
-        #sizeCol{
-          padding-left: 6rem;
+        #prodLog{
+          padding-left: 2rem;
         }
         .container{
           width: 137%;
         }
         .container.contact.animated.fadeIn{
           width: 137%;
-          padding-bottom: 37rem;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           margin-left: 42rem;
+           width: 25%;
+           margin-left: 45rem;
         }
       }
        @media (max-width: 425px) and (min-width: 420px){
-        #sizeCol{
-          padding-left: 6rem;
+        #prodLog{
+          padding-left: 2rem;
         }
         .container{
           width: 118.5%;
         }
         .container.contact.animated.fadeIn{
           width: 118.5%;
-          padding-bottom: 37rem;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           margin-left: 42rem;
+           width: 25%;
+           margin-left: 44rem;
         }
       }
       @media (max-width: 768px) and (min-width: 500px){
-        #sizeCol{
-          padding-left: 8rem;
+        #prodLog{
+          padding-left: 4rem;
         }
       }
        @media (max-width: 1024px) and (min-width: 900px){
-        #sizeCol{
-          padding-left: 10rem;
+        #prodLog{
+          padding-left: 5rem;
         }
       }
      @media (max-width: 360px) and (min-width: 330px ){
-        #sizeCol{
-          padding-left: 6rem;
+        #prodLog{
+          padding-left: 2rem;
         }
         .container{
           width: 153%;
         }
         .container.contact.animated.fadeIn{
           width: 153%;
-          padding-bottom: 37rem;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           width: 88%;
-           margin-left: 47rem;
+           width: 25%;
+           margin-left: 48rem;
         }
       }
       @media (max-width: 414px) and (min-width: 400px){
-        #sizeCol{
-          padding-left: 6rem;
+        #prodLog{
+          padding-left: 2rem;
         }
         .container{
           width: 124%;
         }
         .container.contact.animated.fadeIn{
           width: 124%;
-          padding-bottom: 37rem;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           width: 88%;
-           margin-left: 43rem;
-        }
-      }
-      @media (max-height: 1366px) and (min-height: 1200px){
-        .container.contact.animated.fadeIn{
-          margin-top: 24rem;
-          padding-bottom: 37rem;
+           width: 25%;
+           margin-left: 44rem;
         }
       }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>API</title>
-  <meta charset="utf-8">
+<html>
+<head>
+	<title>Main</title>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
@@ -11,12 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lora|Quicksand|Roboto|Roboto+Slab" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-  </head>
-  <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <link rel="stylesheet" type="text/css" href="(id_1) Delhi Road/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
             <div class="navbar-header">
@@ -26,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand" title="Homepage"><img src="images/Logo.png"></a>
+                <a href="index.html" class="navbar-brand" title="Homepage"><img src="(id_1) Delhi Road/images/Logo.png"></a>
             </div>
             
             <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
@@ -36,21 +35,21 @@
                 </ul>
             </div>
         </div>
-    </nav>
- <form>
-     <div class="input-group">
-         <input type="text" id="textInput" class="form-control" placeholder="Search">
-            <div class="input-group-btn">
-                <button class="btn" type="submit" style="outline: none;text-decoration: none;"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
-     </div>
- </form>
+</nav>
 <div class="container animated fadeIn">
-   <h1 class="text-center heading">Main Categories</h1>
+   <h1 class="text-center heading">Warehouse</h1>
    <hr>
-   <div class= "row" id="maincat_row"></div>
+   <div class= "row" id="warehouse"></div>
 </div>
-<div class="container  contact animated fadeIn">
+<div class="popup-wrap">
+    <div class="popup-box">
+      <h2>Title of Popup</h2>
+      <h3>A sub-heading for the popup with a little description.</h3>
+      <a class="close-btn popup-close" href="#">x</a>
+    </div>
+</div>
+  
+<div class="container contact animated fadeIn">
             <div class="row ">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
@@ -64,46 +63,74 @@
               <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
             </ul>
         <a href="index.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-  </div>
-<script type="text/javascript" src="index.js"></script>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
 <script type="text/javascript">
       $(document).ready(function(){
+            $('.popup-wrap').fadeIn(250);
+    $('.popup-box').removeClass('transform-out').addClass('transform-in');
 
-        $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getMainCategory',
+
+  $('.popup-close').click(function() {
+    $('.popup-wrap').fadeOut(500);
+    $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+  });
+        $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getWarehouses',
           function(wb){
-            for(i in wb.allcat){
-              var maincat = wb.allcat[i];
-              console.log(maincat);
-              $("#maincat_row").append('<div id="columns" class="col-md-4 col-md-4 col-xs-12 thumb">\
-                <p id="result"><button class="main_item" id='+maincat.id+'>'+ maincat.name + '</button></p>\
+            for(i in wb.allwarehouses){
+              var warehouse = wb.allwarehouses[i];
+              console.log(warehouse);
+              $("#warehouse").append('<div id="columns" class="col-md-4 col-md-4 col-xs-12 thumb">\
+                <p id="result"><button class="warehouse_place'+ i +'" id='+warehouse.id+'>'+ warehouse.name + '</button></p>\
                 </div>');
             } 
           }
         );
-       var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getMainCategory';
+       var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getWarehouses';
         $.ajax({
           type: 'POST',
           url: url,
-          // send the id from localstorage to API.
           data: {id: '1' },
           success: function(wb){
             console.log(wb);
           }
         });
-        $(document).on("click", ".main_item", function(e){
+         $(document).on("click", ".warehouse_place1", function(e){
           var id = $(this).attr('id');
           // store ID of main category in storage
           localStorage.setItem('main_cat',id);
-          window.location.href = "sub_cat.html";
+          window.location.href = "(id_1) Delhi Road/index.html";
         });
-        $("#textInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#maincat_row div#columns").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-          });
+        $.ajax({
+          type: 'POST',
+          url: url,
+          data: {id: '2' },
+          success: function(wb){
+            console.log(wb);
+          }
+        });
+         $(document).on("click", ".warehouse_place0", function(e){
+          var id = $(this).attr('id');
+          // store ID of main category in storage
+          localStorage.setItem('main_cat',id);
+          window.location.href = "(id_2) Partapur Meerut/index.html";
+        });
+        $.ajax({
+          type: 'POST',
+          url: url,
+          data: {id: '5' },
+          success: function(wb){
+            console.log(wb);
+          }
+        });
+         $(document).on("click", ".warehouse_place2", function(e){
+          var id = $(this).attr('id');
+          localStorage.setItem('main_cat',id);
+          window.location.href="(id_5) Lucknow Road/index.html";
         });
       });
 </script>
-
 </body>
 </html>
