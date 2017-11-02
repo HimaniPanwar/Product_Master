@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Josefin+Slab|Libre+Baskerville|Lobster|Lobster+Two|Montserrat|Nunito|Playfair+Display+SC|Poiret+One|Questrial|Quicksand|Roboto|Sanchez|Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Quicksand|Roboto|Roboto+Slab" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/sub_cat.css">
+</head>
+<body>
+     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container-fluid topnav">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand" title="Homepage"><img src="images/Logo.png"></a>
+            </div>
+            
+            <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
+                <ul class="nav navbar-nav" >
+                  <li><a href="index.html" id="link">Home</a></li>
+                  <li><a href="logs.html" id="link">Logs</a></li>
+                </ul>
+            </div>
+        </div>
+  </nav>
+  <form>
+       <div class="input-group">
+         <input type="text" id="textInput" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn" type="submit" style="outline: none;text-decoration: none;"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+       </div>
+  </form> 
+  <div class="container animated fadeIn">
+   <h1 class="text-center heading">Sub Categories</h1>
+   <hr>
+    <div class= "row" id="sub_item"></div>
+  </div>
+  <div class="container contact animated fadeIn">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr>
+                    
+                </div>
+            </div>
+            <ul id="icons">
+              <li><a href="https://facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
+              <li><a href="https://www.google.com/gmail/"><i class="fa fa-google fa-2x"></i></a></li>
+              <li><a href="https://github.com"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        <a href="sub_cat.html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+   </div>  
+   <script type="text/javascript" src="js/sub_cat.js"></script>
+</body>
+</html> 
+

@@ -1,0 +1,22 @@
+@import url("main_cat.css");
+button.sub_item{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0B5345;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    font-size: 16px;
+    cursor: pointer;
+    width: 99%;
+    background-color: transparent;
+    border: 2px solid #0B5345;
+    border-radius: 10px;
+    outline-style: none;
+    padding: 3rem 0rem;
+}
+button.sub_item:hover{
+    border: 2px solid #5F6A6A;
+    color: #5F6A6A;
+
+}
