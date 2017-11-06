@@ -7,8 +7,9 @@
           data: {username: $("#username").val() , password: $("#password").val()},
           success: function(wb){
               console.log(wb);
+              window.location.href="./sale.html";
           }
         });
-        window.location.href="./sale.html";
+        
        });
 });
