@@ -17,7 +17,7 @@
               var warehouse = wb.allwarehouses[i];
               console.log(warehouse);
               $("#warehouse").append('<div id="columns" class="col-md-4 col-md-4 col-xs-12 thumb">\
-                <p id="result"><button class="warehouse_place" id='+warehouse.id+'>'+ warehouse.name + '</button></p>\
+                <p id="result"><button class="warehouse_place animated fadeIn" id='+warehouse.id+'>'+ warehouse.name + '</button></p>\
                 </div>');
             } 
           }
