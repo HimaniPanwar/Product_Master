@@ -22,53 +22,71 @@ table#result{
 }
       @media (max-width: 320px){
         #prodLog{
-          padding-left: 2rem;
+          padding-left: 0rem;
         }
         .container{
-          width: 153%;
+          width: 100%;
         }
         .container.contact.animated.fadeIn{
-          width: 153%;
+          width: 173%;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           width: 25%;
-           margin-left: 42rem;
+           width: 30%;
+           margin-left: 49rem;
+        }
+        .heading{
+          margin-left: 22rem;
+        }
+        hr{
+          margin-left: 24.4rem;
         }
       }
        @media (max-width: 375px) and (min-width: 350px){
         #prodLog{
-          padding-left: 2rem;
+          padding-left: 0rem;
         }
         .container{
-          width: 137%;
+          width: 100%;
         }
         .container.contact.animated.fadeIn{
-          width: 137%;
+          width: 148%;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           width: 25%;
-           margin-left: 45rem;
+           width: 30%;
+           margin-left: 49rem;
+        }
+         .heading{
+          margin-left: 17rem;
+        }
+        hr{
+          margin-left: 24.4rem;
         }
       }
        @media (max-width: 425px) and (min-width: 420px){
         #prodLog{
-          padding-left: 2rem;
+          padding-left: 0rem;
         }
         .container{
-          width: 118.5%;
+          width: 100%;
         }
         .container.contact.animated.fadeIn{
-          width: 118.5%;
+          width: 125.5%;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           width: 25%;
-           margin-left: 44rem;
+           width: 30%;
+           margin-left: 46rem;
+        }
+        .heading{
+          margin-left: 12rem;
+        }
+        hr{
+          margin-left: 24.4rem;
         }
       }
       @media (max-width: 768px) and (min-width: 500px){
@@ -83,7 +101,7 @@ table#result{
       }
      @media (max-width: 360px) and (min-width: 330px ){
         #prodLog{
-          padding-left: 2rem;
+          padding-left: 0rem;
         }
         .container{
           width: 153%;
@@ -97,21 +115,27 @@ table#result{
            width: 25%;
            margin-left: 48rem;
         }
+         .heading{
+          margin-left: 0rem;
+        }
+        hr{
+          margin-left: 24.4rem;
+        }
       }
       @media (max-width: 414px) and (min-width: 400px){
         #prodLog{
-          padding-left: 2rem;
+          padding-left: 0rem;
         }
         .container{
           width: 124%;
         }
         .container.contact.animated.fadeIn{
-          width: 124%;
+          width: 129%;
         }
         .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
         .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
-           width: 25%;
-           margin-left: 44rem;
+           width: 30%;
+           margin-left: 46rem;
         }
       }

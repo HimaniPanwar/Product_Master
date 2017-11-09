@@ -30,7 +30,7 @@ button.warehouse_place{
     box-shadow: none;
     border: none;
     margin-bottom: 8rem;
-    width: 80%;
+    width: 81%;
     color: white;
     border: 3px solid lightgrey;
     border-radius: 300px;
@@ -113,7 +113,7 @@ h3 {
 @media(max-width: 1024px) and (min-width: 999px){
 
      button.warehouse_place{
-        width: 75%;
+        width: 76%;
     }
     .modal-content{
         width: 87%;
@@ -134,8 +134,4 @@ h3 {
         width: 44%;
     }
 }
-@media (max-width: 1366px) and (min-width: 1250px){
-    button.warehouse_place{
-        width: 68%;
-    }
-}
+

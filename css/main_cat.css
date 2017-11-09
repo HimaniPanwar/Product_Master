@@ -35,8 +35,8 @@ body::-webkit-scrollbar-thumb {
 .navbar-brand>img {
     display: block;
     width: 35rem;
-    margin-top: -8.75rem;
-    margin-left: -10rem;
+    margin-top: -7.75rem;
+    margin-left: -5rem;
 }
 .animated.fadeIn{
     animation-delay: 0.3s;
@@ -62,13 +62,13 @@ body::-webkit-scrollbar-thumb {
     outline: none;
     margin-top: 3rem;
     font-weight: 600;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
 .navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{
     color: #239B56;
     font-family: 'Quicksand',sans-serif;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background-color: rgba(234,236,238,0.1);
     outline: none;
 }
@@ -512,6 +512,10 @@ button.warehouse_place{
     .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
        width: 95%;
        margin-left: 25rem;
+       margin-top: 10rem;
+    }
+    .input-group-btn>.btn{
+       margin-top: 10rem;
     }
     .head{
         font-size: 40px;
@@ -520,6 +524,12 @@ button.warehouse_place{
     }
      section#contact{
         padding-bottom: 35rem;
+    }
+    .navbar-default .navbar-nav>li>a{
+        margin-top: 6rem;
+    }
+    .navbar-brand>img{
+        margin-left: -11rem;
     }
 }
 @media(max-width: 1024px) and (min-width: 999px){
