@@ -13,7 +13,7 @@ $(document).ready(function(e){
             
            }); 
            setTimeout(function () {
-             window.location.href = "../static/index.html"; 
+             window.location.href = "http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/index"; 
            }, 2000);          
      }); 
 }); 

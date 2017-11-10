@@ -24,7 +24,7 @@
         var id = $(this).attr('id');
         // store ID of sub category in storage
         localStorage.setItem('prod',id);
-        window.location.href="../static/./inventory.html";
+        window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/inventoryhtml";
       });
       $("#textInput").on("keyup", function() {
          var value = $(this).val().toLowerCase();

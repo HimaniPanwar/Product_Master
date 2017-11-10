@@ -20,12 +20,11 @@ $(document).ready(function(){
           var id = $(this).attr('id');
           // store ID of main category in storage
           localStorage.setItem('main_cat',id);
-          window.location.href = "../static/./sub_cat.html";
+          window.location.href = "http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/sub_cathtml";
         });
-        $("#textInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#maincat_row div#columns").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-          });
+        $(document).on("click", ".btn", function(e){
+          var searchVal = $("#textInput").val();
+          localStorage.setItem('prod_search', searchVal);
+          window.location.href = "http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/searchProducts";
         });
-});
+    });

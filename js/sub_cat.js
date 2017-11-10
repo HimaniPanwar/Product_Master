@@ -20,7 +20,7 @@ $(document).ready(function(){
           var id = $(this).attr('id');
           // store ID of sub category in storage
           localStorage.setItem('sub_cat',id);
-          window.location.href = "../static/./product.html";
+          window.location.href = "http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/producthtml";
         });
         $("#textInput").on("keyup", function() {
             var value = $(this).val().toLowerCase();

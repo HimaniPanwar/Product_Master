@@ -3,12 +3,12 @@ $(document).ready(function(){
    	    
    	    localStorage.setItem('inventory',id);
         $(document).on("click","#btn1",function(e){
-            window.location.href="../static/./LogIn_1.html";
+            window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/Login_1html";
         });
         $(document).on("click","#btn2", function(e){
-            window.location.href="../static/./LogIn_2.html";
+            window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/Login_2html";
         });
         $(document).on("click","#btn3", function(e){
-            window.location.href="../static/./LogIn_3.html";
+            window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/Login_3html";
         });
 });

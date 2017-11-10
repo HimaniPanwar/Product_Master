@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>API</title>
-  <meta charset="utf-8">
+<html>
+<head>
+	<title>Products</title>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
@@ -12,11 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" type="text/css" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/index.css">
-  </head>
-  <body>
-
-  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <link rel="stylesheet" type="text/css" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/product.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
             <div class="navbar-header">
@@ -32,7 +31,7 @@
             </div>
             
             <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
-                <ul class="nav navbar-nav" >
+                <ul class="nav navbar-nav " >
                   <li><a href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/index" id="link">Home</a></li>
                   <li><a href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/Login_1html" id="link">Update Sales</a></li>
                   <li><a href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/Login_2html" id="link">Return Stock</a></li>
@@ -40,22 +39,54 @@
                 </ul>
             </div>
         </div>
-  </nav>
- <div id="myModal" class="modal animated fadeIn">
-
-  <div class="modal-content">
-
-      <span class="close">&times;</span>
-      <h3 align="center">Select the nearest warehouse</h3>
-      <hr>
-    <div class="modal-body">
-      <div class="container animated fadeIn">
-        <div class= "row" id="warehouse"></div>
-      </div>
-    </div>
+ </nav>
+<div class="container animated fadeIn">
+   <h1 class="text-center heading">Products</h1>
+   <hr>
+   <table id="result" cellpadding="10" cellspacing="10" class="table table-striped animated fadeIn">
+   <tr>
+     <th>Name</th>
+     <th id="sizeCol">Size</th>
+     <th>Quantity</th>
+   </tr>
+   </table>
 </div>
-
+<div class="container contact animated fadeIn">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr>
+                    
+                </div>
+            </div>
+            <ul id="icons">
+              <li><a href="https://facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
+              <li><a href="https://www.google.com/gmail/"><i class="fa fa-google fa-2x"></i></a></li>
+              <li><a href="https://github.com"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            </ul>     
+        <a href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/producthtml" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 </div>
-<script type="text/javascript" src="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/js/index.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        $('.btn').click(function(){
+         var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/searchProducts';
+         $.ajax({
+           type: 'POST',
+           url: url,
+           // send the id from localstorage to API.
+           data: {id: localStorage.getItem('warehouse_Loc') , keyword: localStorage.getItem('prod_search')},
+           success: 
+           function(wb){
+              console.log(wb);
+              for(i in wb.allproducts){
+                $prod = wb.allproducts[i];
+                 $("#result").append('<tr id="myTable"><td class="product" id='+ $prod.id + '>'+ $prod.name + '</td><td id="sizeCol">' + $prod.size + '</td><td>\
+                  ' + ' '+ $prod.quantity+ '</td></tr>');
+              }
+            }
+        });
+	});
+</script>
 </body>
 </html>
