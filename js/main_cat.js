@@ -20,7 +20,7 @@ $(document).ready(function(){
           var id = $(this).attr('id');
           // store ID of main category in storage
           localStorage.setItem('main_cat',id);
-          window.location.href = "./sub_cat.html";
+          window.location.href = "../static/./sub_cat.html";
         });
         $("#textInput").on("keyup", function() {
             var value = $(this).val().toLowerCase();

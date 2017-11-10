@@ -1,4 +1,4 @@
- @import url("index.css");
+ @import url("../static/index.css");
 
 #myTable{
   color: #239B56;
@@ -21,11 +21,8 @@ table#result{
    padding-left: 0rem;
 }
       @media (max-width: 320px){
-        #prodLog{
-          padding-left: 0rem;
-        }
-        .container{
-          width: 100%;
+        .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+            padding: 16px;
         }
         .container.contact.animated.fadeIn{
           width: 173%;
@@ -44,11 +41,8 @@ table#result{
         }
       }
        @media (max-width: 375px) and (min-width: 350px){
-        #prodLog{
-          padding-left: 0rem;
-        }
-        .container{
-          width: 100%;
+        .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+            padding: 16px;
         }
         .container.contact.animated.fadeIn{
           width: 148%;
@@ -67,11 +61,8 @@ table#result{
         }
       }
        @media (max-width: 425px) and (min-width: 420px){
-        #prodLog{
-          padding-left: 0rem;
-        }
-        .container{
-          width: 100%;
+         .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+            padding: 14px;
         }
         .container.contact.animated.fadeIn{
           width: 125.5%;
@@ -89,23 +80,8 @@ table#result{
           margin-left: 24.4rem;
         }
       }
-      @media (max-width: 768px) and (min-width: 500px){
-        #prodLog{
-          padding-left: 4rem;
-        }
-      }
-       @media (max-width: 1024px) and (min-width: 900px){
-        #prodLog{
-          padding-left: 5rem;
-        }
-      }
+    
      @media (max-width: 360px) and (min-width: 330px ){
-        #prodLog{
-          padding-left: 0rem;
-        }
-        .container{
-          width: 153%;
-        }
         .container.contact.animated.fadeIn{
           width: 153%;
         }
@@ -116,18 +92,15 @@ table#result{
            margin-left: 48rem;
         }
          .heading{
-          margin-left: 0rem;
+          margin-left: 18rem;
         }
         hr{
           margin-left: 24.4rem;
         }
       }
       @media (max-width: 414px) and (min-width: 400px){
-        #prodLog{
-          padding-left: 0rem;
-        }
-        .container{
-          width: 124%;
+         .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+            padding: 14px;
         }
         .container.contact.animated.fadeIn{
           width: 129%;
@@ -137,5 +110,11 @@ table#result{
         .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
            width: 30%;
            margin-left: 46rem;
+        }
+         .heading{
+          margin-left: 13rem;
+        }
+        hr{
+          margin-left: 24.4rem;
         }
       }

@@ -8,7 +8,7 @@
           success: function(wb){
               console.log(wb);
               if(wb.success === "yes")
-              window.location.href="./sale.html";
+              window.location.href="../static/./sale.html";
           }
         });
         

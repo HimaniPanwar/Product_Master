@@ -8,7 +8,7 @@ $(document).ready(function(){
           success: function(wb){
               console.log(wb);
               if(wb.success === "yes")
-              window.location.href="./getStock.html";
+              window.location.href="../static/./getStock.html";
           }
         });
         

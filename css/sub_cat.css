@@ -1,4 +1,4 @@
-@import url("main_cat.css");
+@import url("../static/main_cat.css");
 button.sub_item{
     text-align: center;
     text-transform: uppercase;

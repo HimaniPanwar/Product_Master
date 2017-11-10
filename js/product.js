@@ -24,7 +24,7 @@
         var id = $(this).attr('id');
         // store ID of sub category in storage
         localStorage.setItem('prod',id);
-        window.location.href="./inventory.html";
+        window.location.href="../static/./inventory.html";
       });
       $("#textInput").on("keyup", function() {
          var value = $(this).val().toLowerCase();
