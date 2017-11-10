@@ -1,4 +1,4 @@
-@import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/main_cat.css");
+@import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/style.css");
 
 .modal {
     display: none;
@@ -122,6 +122,11 @@ h3 {
 @media (max-width: 1250px) and (min-width: 1160px){
     button.warehouse_place{
         width: 55%;
+    }
+}
+@media (max-width: 1366px) and (min-width: 1260px){
+    button.warehouse_place{
+        width: 69%;
     }
 }
 @media(max-width: 1440px) and (min-width: 1420px){
