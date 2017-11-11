@@ -21,7 +21,7 @@ $(document).ready(function(){
           var id = $(this).attr('id');
           // store ID of main category in storage
           localStorage.setItem('main_cat',id);
-          window.location.href = "./sub_cat.html";
+          window.location.href = "http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/sub_cathtml";
         });
         $('#textInput').val('');
         $('button.click').click(function(){

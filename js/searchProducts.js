@@ -1,5 +1,5 @@
 $(document).ready(function(){
-        $('.btn').click(function(){
+       $('.btn').click(function(){
          var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/searchProducts';
          $.ajax({
            type: 'POST',
@@ -16,6 +16,7 @@ $(document).ready(function(){
               }
             }
         });
+      });
       $(document).on("click", ".product", function(e){
         var id = $(this).attr('id');
         // store ID of sub category in storage
