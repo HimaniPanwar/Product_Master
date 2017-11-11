@@ -29,6 +29,6 @@ $(document).ready(function(){
            localStorage.setItem('warehouse',warehouse_id);
            var searchVal = $("#textInput").val();
            localStorage.setItem('prod_search',searchVal);
-           window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/searchProducts";
+           window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getsearchhtml";
         });
 });
