@@ -11,4 +11,10 @@ $(document).ready(function(){
         $(document).on("click","#btn3", function(e){
             window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/Login_3html";
         });
+        $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+        });
+        $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
+        });
 });

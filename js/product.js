@@ -8,6 +8,7 @@
           success: 
             function(wb){
               console.log(wb);
+              wb.allproducts.sort(function(a,b){ return a.name.localeCompare(b.name); });
               for(i in wb.allproducts){
                 $prod = wb.allproducts[i];
                 /*$("#prod_item").append('<div class="col-md-4 col-md-4 col-xs-12 thumb">\
@@ -31,5 +32,11 @@
          $("#result tr#myTable").filter(function() {
          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
          });
+      });
+      $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+      });
+      $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
       });
 });

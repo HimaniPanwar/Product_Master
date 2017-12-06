@@ -16,4 +16,10 @@ $(document).ready(function(e){
              window.location.href = "http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/index"; 
            }, 2000);          
      }); 
+     $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+     });
+     $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
+     });
 }); 

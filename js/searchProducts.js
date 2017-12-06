@@ -9,6 +9,7 @@ $(document).ready(function(){
            success: 
            function(wb){
               console.log(wb);
+              wb.allproducts.sort(function(a,b){ return a.name.localeCompare(b.name); });
               for(i in wb.allproducts){
                 $prod = wb.allproducts[i];
                  $("#result").append('<tr id="myTable"><td class="product" id='+ $prod.id + '>'+ $prod.name + '</td><td id="sizeCol">' + $prod.size + '</td><td>\
@@ -21,5 +22,11 @@ $(document).ready(function(){
         // store ID of sub category in storage
         localStorage.setItem('prod',id);
         window.location.href="./inventory.html";
+      });
+      $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+      });
+      $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
       });
 });

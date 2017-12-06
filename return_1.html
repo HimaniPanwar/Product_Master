@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Flourish</title>
+	<title>flourish</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lora|Quicksand|Roboto|Roboto+Slab" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-     <link rel="icon" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/images/brand.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/product.css">
+     <link rel="icon" href="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/images/brand.png" type="image/png">
+    <style type="text/css">
+       @import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/style.css");
+       @import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/sale_1.css");
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container-fluid topnav">
             
             <div class="navbar-header">
@@ -40,19 +43,47 @@
                 </ul>
             </div>
         </div>
- </nav>
-<div class="container animated fadeIn">
-   <h1 class="text-center heading">Products</h1>
-   <hr>
-   <table id="result" cellpadding="10" cellspacing="10" class="table table-striped animated fadeIn">
-   <tr>
-     <th>Name</th>
-     <th id="sizeCol">Size</th>
-     <th>Product Code</th>
-   </tr>
-   </table>
-</div>
-<div class="container contact animated fadeIn">
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="panel small">
+             <h3 class="text-center">SEARCH PRODUCTS</h3>
+             <div id="searchBar">
+                <input type="text" class="form-control" placeholder="Search" id="textInput" list="dropdown"/><br><br>
+                <button class="click" style="outline-style: none;text-decoration: none;"><i class="glyphicon glyphicon-search"></i></button>
+                <div id="datalist" style="overflow-y: auto;height: 100px;"><datalist id="dropdown"></datalist></div>
+             </div>
+             <div class="animated fadeIn" id="prodList">
+                <table cellpadding="10" cellspacing="10" class="table table-striped animated fadeIn">
+                   <tr>
+                     <th>Name</th>
+                     <th id="sizeCol">Size</th>
+                     <th>Product Code</th>
+                   </tr>
+                   <tr><table id="result" class="table table-striped animated fadeIn"></table><tr>
+                </table>
+          
+             </div>
+             <input type="button" value="BACK" id="backSearch" style="outline-style: none;">
+             <p id="message"></p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="panel large">
+             <div class="animated fadeIn">
+                <h3 class="text-center">UPDATE RETURN DETAILS</h3>
+                <form>
+                    <input type="text" class="form-control" id="textInput_1" placeholder="Enter here...">
+                    <input type="button" value="UPDATE" id="submit" style="outline-style: none;">
+                </form>
+                <p id="result_1"></p>
+             </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <div class="container contact animated fadeIn">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
@@ -65,9 +96,9 @@
               <li><a href="https://www.google.com/gmail/"><i class="fa fa-google fa-2x"></i></a></li>
               <li><a href="https://github.com"><i class="fa fa-github fa-2x"></i></a></li>
               <li><a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            </ul>     
-        <a href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/producthtml" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-</div>
-<script type="text/javascript" src="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/js/searchProducts.js"></script>
+            </ul>   
+        <a href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/return_1html" title="to the top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    </div>
+  <script type="text/javascript" src="http://flourish-release.ap-south-1.elasticbeanstalk.com/static/js/return_1.js"></script>
 </body>
 </html>

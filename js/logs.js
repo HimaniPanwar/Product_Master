@@ -1,7 +1,7 @@
 $(document).ready(function(e){
          $.getJSON('http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/logs',
                       function(wb){
-                      	
+                      	 wb.recentlog.sort(function(a,b){ return a.name.localeCompare(b.name); });
                          for(i in wb.recentlog){
                             var recent_Log = wb.recentlog[i];
                             console.log(recent_Log);
@@ -18,4 +18,10 @@ $(document).ready(function(e){
          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
          });
       });
-   	  });
+      $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+      });
+      $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
+      });
+  });

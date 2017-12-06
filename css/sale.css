@@ -16,6 +16,7 @@
        .text-center {
           text-align: center;
           font-family: 'Montserrat',sans-serif;
+          background: transparent;
        }
        p#result{
           text-align: center;

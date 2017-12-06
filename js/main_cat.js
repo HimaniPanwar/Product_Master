@@ -8,6 +8,7 @@ $(document).ready(function(){
           data: {id: warehouse_id },
           success: function(wb){
             console.log(wb);
+            wb.allcat.sort(function(a,b){ return a.name.localeCompare(b.name); });
             for(i in wb.allcat){
               var maincat = wb.allcat[i];
               console.log(maincat);
@@ -30,5 +31,11 @@ $(document).ready(function(){
            var searchVal = $("#textInput").val();
            localStorage.setItem('prod_search',searchVal);
            window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getsearchhtml";
+        });
+        $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+        });
+        $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
         });
 });

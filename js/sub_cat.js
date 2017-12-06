@@ -7,6 +7,7 @@ $(document).ready(function(){
           data: {id: localStorage.getItem('main_cat')},
           success: function(wb){
 	          console.log(wb);
+            wb.allsubcat.sort(function(a,b){ return a.name.localeCompare(b.name); });
             for(i in wb.allsubcat){
               $subcat = wb.allsubcat[i];
               $("#sub_item").append('<div id="columns" class="col-md-4 col-md-4 col-xs-12 thumb">\
@@ -27,5 +28,11 @@ $(document).ready(function(){
             $("#sub_item div#columns").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
           });
+        });
+        $("#salelink").click(function(){
+           localStorage.setItem('ware_house',warehouse_id);   
+        });
+        $("#returnlink").click(function(){
+           localStorage.setItem('ware_house_1',warehouse_id);
         });
 });
