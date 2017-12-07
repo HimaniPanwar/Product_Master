@@ -45,7 +45,7 @@ $(document).ready(function(){
               for(i in wb.allproducts){
                 $prod = wb.allproducts[i];
                  $("#result").html('<tr id="myTable"><td class="product" id='+ $prod.id + '>'+ $prod.name + '</td><td id="sizeCol">' + $prod.size + '</td><td id="sizeQuat">\
-                  ' + ' '+ $prod.quantity+ '</td></tr>').show(50);
+                  ' + ' '+ '0.'+$prod.quantity+ '</td></tr>').show(50);
               }
             }
         });
@@ -90,6 +90,6 @@ $(document).ready(function(){
            localStorage.setItem('ware_house',warehouse_id);   
         });
         $("#returnlink").click(function(){
-           localStorage.setItem('ware_house_1',warehouse_id);
+           localStorage.setItem('ware_house',warehouse_id);
         });              
   }); 

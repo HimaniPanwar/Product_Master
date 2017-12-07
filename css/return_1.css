@@ -1,0 +1,158 @@
+@import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/style.css");
+@import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/sale_1.css");
+
+td{
+    color: #239B56;
+    padding-left: 4rem;
+    padding-right: 13rem;
+}
+th#sizeCol{
+	padding-left: 2rem;
+}
+@media(max-width: 320px){
+  td{
+    color: #239B56;
+    padding-left: 0rem;
+    padding-right: 6rem;
+  }
+  th#sizeCol{
+    padding-left: 2.7rem;
+  }
+  input#backSearch{
+     font-size: 10px;
+     margin-left: 11rem;
+  }
+  input#submit{
+    margin-left: 37%;
+    margin-bottom: 4rem;
+    font-size: 10px;
+  }
+  input#textInput_1{
+     width: 70%;
+     margin-left: 4.5rem;
+     margin-top: 7rem;
+  }
+
+}
+@media(max-width: 375px) and (min-width: 330px){
+   input#textInput{
+        margin-left: 103.5rem;
+        margin-top: 7rem;
+   } 
+   button.click{
+      margin-top: 7rem;
+   }
+  td{
+    color: #239B56;
+    padding-left: 0rem;
+    padding-right: 8rem;
+  }
+  input#backSearch{
+     font-size: 10px;
+     margin-left: 13.5rem;
+  }
+  input#submit{
+    margin-left: 37%;
+    margin-bottom: 4rem;
+    font-size: 10px;
+  }
+  input#textInput_1{
+     width: 70%;
+     margin-left: 4.5rem;
+     margin-top: 7rem;
+  }
+
+}
+@media(max-width: 425px) and (min-width: 420px){
+   input#textInput{
+        margin-left: 103.5rem;
+        margin-top: 7rem;
+   } 
+   button.click{
+      margin-top: 7rem;
+   }
+  td{
+    color: #239B56;
+    padding-left: 0rem;
+    padding-right: 9rem;
+  }
+  input#backSearch{
+     font-size: 10px;
+     margin-left: 16rem;
+  }
+  input#submit{
+    margin-left: 40%;
+    margin-bottom: 4rem;
+    font-size: 10px;
+  }
+  input#textInput_1{
+     width: 70%;
+     margin-left: 6rem;
+     margin-top: 7rem;
+  }
+
+}
+@media(max-width: 768px) and (min-width: 600px){
+   input#textInput{
+        margin-left: 77rem;
+        margin-top: 7rem;
+   } 
+   button.click{
+      margin-top: 7rem;
+   }
+  td{
+    color: #239B56;
+    padding-left: 0rem;
+    padding-right: 20rem;
+  }
+  th#sizeQuant{
+    padding-right: 4rem;
+  }
+  input#backSearch{
+     font-size: 10px;
+     margin-left: 32rem;
+  }
+  input#submit{
+    margin-left: 45%;
+    margin-bottom: 4rem;
+    font-size: 10px;
+  }
+  input#textInput_1{
+     width: 45%;
+     margin-left: 20rem;
+     margin-top: 7rem;
+  }
+  datalist{
+    margin-left: -10rem;
+  }
+
+}
+@media(max-width: 1024px) and (min-width: 1000px){
+   input#textInput{
+        margin-left: 40rem;
+        margin-top: 7rem;
+   } 
+   button.click{
+      margin-top: 7rem;
+   }
+  td{
+    color: #239B56;
+    padding-left: 0rem;
+    padding-right: 11rem;
+  }
+  input#backSearch{
+     font-size: 10px;
+     margin-left: 19rem;
+  }
+  input#submit{
+    margin-left: 42%;
+    margin-bottom: 4rem;
+    font-size: 10px;
+  }
+  input#textInput_1{
+     width: 60%;
+     margin-left: 10rem;
+     margin-top: 7rem;
+  }
+
+}

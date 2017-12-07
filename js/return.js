@@ -20,6 +20,6 @@ $(document).ready(function(e){
            localStorage.setItem('ware_house',warehouse_id);   
      });
      $("#returnlink").click(function(){
-           localStorage.setItem('ware_house_1',warehouse_id);
+           localStorage.setItem('ware_house',warehouse_id);
      }); 
 }); 

@@ -8,7 +8,7 @@
           success: function(wb){
               console.log(wb);
               if(wb.success === "yes")
-              window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/sale_1html";
+              window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/getsale_1html";
           }
         });
         

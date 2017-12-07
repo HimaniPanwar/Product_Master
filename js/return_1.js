@@ -2,17 +2,17 @@ $(document).ready(function(){
 		$("#prodList,#backSearch").hide();
 		var searchValue = $("#textInput").val();
         localStorage.setItem('prodSearch',searchValue);
-        var id= localStorage.getItem('ware_house_1');
+        var id= localStorage.getItem('ware_house');
 
        $("#textInput").keypress(function(){
        	 
          var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/searchProducts';
-         console.log(localStorage.getItem('ware_house_1'));
+         console.log(localStorage.getItem('ware_house'));
          $.ajax({
            type: 'POST',
            url: url,
            // send the id from localstorage to API.
-           data: {id: localStorage.getItem('ware_house_1') , keyword: localStorage.getItem('prodSearch')},
+           data: {id: localStorage.getItem('ware_house') , keyword: localStorage.getItem('prodSearch')},
            success: 
            function(wb){
               $("#dropdown").html(' ');
@@ -45,7 +45,7 @@ $(document).ready(function(){
               for(i in wb.allproducts){
                 $prod = wb.allproducts[i];
                  $("#result").html('<tr id="myTable"><td class="product" id='+ $prod.id + '>'+ $prod.name + '</td><td id="sizeCol">' + $prod.size + '</td><td id="sizeQuat">\
-                  ' + ' '+ $prod.quantity+ '</td></tr>').show(50);
+                  ' + ' '+ '0.'+$prod.quantity+ '</td></tr>').show(50);
               }
             }
         });
@@ -90,6 +90,6 @@ $(document).ready(function(){
            localStorage.setItem('ware_house',warehouse_id);   
         });
         $("#returnlink").click(function(){
-           localStorage.setItem('ware_house_1',warehouse_id);
+           localStorage.setItem('ware_house',warehouse_id);
         });               
   }); 
