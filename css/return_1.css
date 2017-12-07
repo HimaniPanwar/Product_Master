@@ -3,7 +3,7 @@
 
 td{
     color: #239B56;
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-right: 13rem;
 }
 th#sizeCol{
@@ -124,6 +124,12 @@ th#sizeCol{
   }
   datalist{
     margin-left: -10rem;
+  }
+  .panel.large{
+    margin-top: 2rem;
+  }
+  .panel.small{
+    margin-top: 4rem;
   }
 
 }

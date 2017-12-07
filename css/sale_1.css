@@ -142,6 +142,9 @@ td.product{
      margin-left: 4.5rem;
      margin-top: 7rem;
   }
+  .panel.large{
+     margin-top: 2rem;
+  }
 
 }
 @media(max-width: 375px) and (min-width: 330px){
@@ -171,6 +174,9 @@ td.product{
      margin-left: 4.5rem;
      margin-top: 7rem;
   }
+  .panel.large{
+     margin-top: 2rem;
+  }
 
 }
 @media(max-width: 425px) and (min-width: 420px){
@@ -199,6 +205,9 @@ td.product{
      width: 70%;
      margin-left: 6rem;
      margin-top: 7rem;
+  }
+  .panel.large{
+     margin-top: 2rem;
   }
 
 }
@@ -235,6 +244,12 @@ td.product{
   datalist{
     margin-left: -10rem;
   }
+  .panel.large{
+     margin-top: 2rem;
+  }
+  .panel.small{
+    margin-top: 4rem;
+  }
 
 }
 @media(max-width: 1024px) and (min-width: 1000px){
@@ -264,5 +279,3 @@ td.product{
      margin-left: 10rem;
      margin-top: 7rem;
   }
-
-}
