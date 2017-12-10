@@ -86,14 +86,14 @@ div#datalist{
     border: 1px solid #239B56;
      
 }
-input#textInput{
+input#inputText1{
     margin-left: 15rem;
     margin-top: 5rem;
     border: 1px solid lightgrey;
     color: #239B56;
     width: 24rem;
 }
-input#textInput:focus,input#textInput:active{
+input#inputText1:focus,input#inputText1:active{
     border: 1px solid #239B56;
 }
 input#textInput_1:focus,input#textInput_1:active{
@@ -113,7 +113,7 @@ td.product{
    cursor: pointer;
 }
 @media(max-width: 320px){
-   input#textInput{
+   input#inputText1{
         margin-left: 103.5rem;
         margin-top: 7rem;
    } 
@@ -148,7 +148,7 @@ td.product{
 
 }
 @media(max-width: 375px) and (min-width: 330px){
-   input#textInput{
+   input#inputText1{
         margin-left: 103.5rem;
         margin-top: 7rem;
    } 
@@ -180,7 +180,7 @@ td.product{
 
 }
 @media(max-width: 425px) and (min-width: 420px){
-   input#textInput{
+   input#inputText1{
         margin-left: 103.5rem;
         margin-top: 7rem;
    } 
@@ -212,7 +212,7 @@ td.product{
 
 }
 @media(max-width: 768px) and (min-width: 600px){
-   input#textInput{
+   input#inputText1{
         margin-left: 77rem;
         margin-top: 7rem;
    } 
@@ -248,12 +248,12 @@ td.product{
      margin-top: 2rem;
   }
   .panel.small{
-    margin-top: 4rem;
+     margin-top: 4rem;
   }
 
 }
 @media(max-width: 1024px) and (min-width: 1000px){
-   input#textInput{
+   input#inputText1{
         margin-left: 40rem;
         margin-top: 7rem;
    } 
@@ -279,3 +279,5 @@ td.product{
      margin-left: 10rem;
      margin-top: 7rem;
   }
+
+}

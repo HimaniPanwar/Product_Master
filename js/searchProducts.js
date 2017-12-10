@@ -21,7 +21,7 @@ $(document).ready(function(){
         var id = $(this).attr('id');
         // store ID of sub category in storage
         localStorage.setItem('prod',id);
-        window.location.href="./inventory.html";
+        window.location.href="http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/inventoryhtml";
       });
       $("#salelink").click(function(){
            localStorage.setItem('ware_house',warehouse_id);   
