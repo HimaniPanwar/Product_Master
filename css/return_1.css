@@ -7,32 +7,7 @@ td{
     padding-right: 13rem;
 }
 th#sizeCol{
-	padding-left: 2rem;
-}
-@media(max-width: 320px){
-  td{
-    color: #239B56;
-    padding-left: 0rem;
-    padding-right: 6rem;
-  }
-  th#sizeCol{
-    padding-left: 2.7rem;
-  }
-  input#backSearch{
-     font-size: 10px;
-     margin-left: 11rem;
-  }
-  input#submit{
-    margin-left: 37%;
-    margin-bottom: 4rem;
-    font-size: 10px;
-  }
-  input#textInput_1{
-     width: 70%;
-     margin-left: 4.5rem;
-     margin-top: 7rem;
-  }
-
+  padding-left: 2rem;
 }
 @media(max-width: 320px){
   td{
