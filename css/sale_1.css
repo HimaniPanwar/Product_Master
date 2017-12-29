@@ -91,7 +91,11 @@ input#inputText1{
     margin-top: 5rem;
     border: 1px solid lightgrey;
     color: #239B56;
-    width: 24rem;
+    width: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 input#inputText1:focus,input#inputText1:active{
     border: 1px solid #239B56;
@@ -114,7 +118,7 @@ td.product{
 }
 @media(max-width: 320px){
    input#inputText1{
-        margin-left: 103.5rem;
+        margin-left: 103rem;
         margin-top: 7rem;
    } 
    button.click{
@@ -149,7 +153,7 @@ td.product{
 }
 @media(max-width: 375px) and (min-width: 330px){
    input#inputText1{
-        margin-left: 103.5rem;
+        margin-left: 103rem;
         margin-top: 7rem;
    } 
    button.click{
@@ -181,7 +185,7 @@ td.product{
 }
 @media(max-width: 425px) and (min-width: 420px){
    input#inputText1{
-        margin-left: 103.5rem;
+        margin-left: 103rem;
         margin-top: 7rem;
    } 
    button.click{
@@ -211,7 +215,28 @@ td.product{
   }
 
 }
-@media(max-width: 768px) and (min-width: 600px){
+@media(max-width: 599px) and (min-width: 500px){
+  
+   input#inputText1{
+        margin-left: 10.5rem;
+        margin-top: 7rem;
+   } 
+}
+@media(max-width: 699px) and (min-width: 600px){
+  
+   input#inputText1{
+        margin-left: 18.5rem;
+        margin-top: 7rem;
+   } 
+}
+@media(max-width: 999px) and (min-width: 800px){
+  
+   input#inputText1{
+        margin-left: 23.5rem;
+        margin-top: 7rem;
+   } 
+}
+@media(max-width: 768px) and (min-width: 700px){
    input#inputText1{
         margin-left: 77rem;
         margin-top: 7rem;
@@ -232,13 +257,13 @@ td.product{
      margin-left: 32rem;
   }
   input#submit{
-    margin-left: 45%;
+    margin-left: 44%;
     margin-bottom: 4rem;
     font-size: 10px;
   }
   input#textInput_1{
-     width: 45%;
-     margin-left: 20rem;
+     width: 35%;
+     margin-left: 23rem;
      margin-top: 7rem;
   }
   datalist{
@@ -281,4 +306,9 @@ td.product{
   }
 
 }
-
+@media(max-width: 1440px) and (min-width: 1400px){
+  input#inputText1{
+        margin-left: 3rem;
+        margin-top: 5rem;
+   } 
+}
