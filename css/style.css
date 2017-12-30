@@ -492,6 +492,16 @@ button.warehouse_place{
     }
 
 }
+@media(max-width: 399px) and (min-width: 380px){
+    .navbar-brand>img{
+        width: 7rem;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .panel.large{
+        margin-top: 2rem;
+    }
+}
 @media(max-width: 425px) and (min-width: 420px){
     .img-responsive{
         margin-left: 1rem;
