@@ -439,6 +439,17 @@ button.warehouse_place{
     
    
 }
+@media(max-width: 360px) and (min-width: 330px){
+    .navbar-brand>img{
+        width: 7rem;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    #searchBar{
+       margin-left: -99rem;
+    }
+
+}
 
 @media(max-width: 375px) and (min-width: 330px){
     .img-responsive{
@@ -470,16 +481,26 @@ button.warehouse_place{
     }
     
 }
-@media(max-width: 360px) and (min-width: 330px){
+
+@media(max-width: 399px) and (min-width: 380px){
     .navbar-brand>img{
         width: 7rem;
         margin-top: -1rem;
         margin-left: 1rem;
     }
-    #searchBar{
-       margin-left: -99rem;
+    .panel.large{
+        margin-top: 2rem;
     }
-
+     .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+    .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+    .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+       width: 86%;
+       margin-left: 25rem;
+       margin-top: 5rem;
+    }
+    .input-group-btn>.btn{
+       margin-top: 5rem;
+    }
 }
 @media(max-width: 414px) and (min-width: 400px){
     .navbar-brand>img{
@@ -490,17 +511,17 @@ button.warehouse_place{
     #searchBar{
        margin-left: -95.7rem;
     }
+     .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+    .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+    .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+       width: 88%;
+       margin-left: 25rem;
+       margin-top: 2rem;
+    }
+    .input-group-btn>.btn{
+       margin-top: 2rem;
+    }
 
-}
-@media(max-width: 399px) and (min-width: 380px){
-    .navbar-brand>img{
-        width: 7rem;
-        margin-top: -1rem;
-        margin-left: 1rem;
-    }
-    .panel.large{
-        margin-top: 2rem;
-    }
 }
 @media(max-width: 425px) and (min-width: 420px){
     .img-responsive{
@@ -533,6 +554,23 @@ button.warehouse_place{
     }
 
 }
+@media(max-width: 499px) and (min-width:450px){
+   .navbar-brand>img {
+      width: 8rem;
+      margin-top: -1rem;
+      margin-left: 1rem;
+    } 
+    .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+    .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+    .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+       width: 35%;
+       margin-left: 25rem;
+       margin-top: 2rem;
+    }
+    .input-group-btn>.btn{
+       margin-top: 2rem;
+    }
+}
 @media(max-width: 599px) and (min-width: 500px){
     .navbar-brand>img {
       width: 8rem;
@@ -546,6 +584,16 @@ button.warehouse_place{
       margin-top: -1rem;
       margin-left: 1rem;
     }
+    .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+    .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+    .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+       width: 35%;
+       margin-left: 25rem;
+       margin-top: 2rem;
+    }
+    .input-group-btn>.btn{
+       margin-top: 2rem;
+    }
 }
 @media(max-width: 768px) and (min-width: 700px){
     .img-responsive{
@@ -557,10 +605,10 @@ button.warehouse_place{
     .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
        width: 30%;
        margin-left: 25rem;
-       margin-top: 10rem;
+       margin-top: 5rem;
     }
     .input-group-btn>.btn{
-       margin-top: 10rem;
+       margin-top: 5rem;
     }
     .head{
         font-size: 40px;
@@ -581,6 +629,26 @@ button.warehouse_place{
     #searchBar{
         margin-left: -53.7rem;
         margin-top: 1rem;
+    }
+}
+@media(max-width: 900px) and (min-width: 800px){
+    .navbar-brand>img{
+        width: 14rem;
+        margin-top: 0rem;
+        margin-left: 1rem;
+    }
+    .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
+    .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
+    .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+       width: 30%;
+       margin-left: 25rem;
+       margin-top: 2rem;
+    }
+    .input-group-btn>.btn{
+       margin-top: 2rem;
+    }
+    input#textInput{
+        margin-left: 2rem;
     }
 }
 @media(max-width: 1024px) and (min-width: 999px){

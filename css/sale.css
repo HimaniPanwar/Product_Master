@@ -1,5 +1,5 @@
 @import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/style.css");
-      .jumbotron.container {
+ .jumbotron.container {
            margin-top: 8rem;
            background-color: transparent;
            border: 1px solid #145A32;
@@ -16,10 +16,12 @@
        .text-center {
           text-align: center;
           font-family: 'Montserrat',sans-serif;
-          background: transparent;
        }
        p#result{
           text-align: center;
+       }
+       h3{
+        background-color: transparent;
        }
        @media(max-width: 320px){
           .jumbotron.container{
@@ -30,11 +32,28 @@
               margin-left: 3rem;
           }
           input#submit{
-              margin-left: 8.5rem;
+              margin-left: 9.5rem;
+              font-size: 12px;
+          }
+          .container.contact.animated.fadeIn{
+            width: 101%;
           }
 
        }
-        @media(max-width: 375px) and (min-width: 330px){
+       @media(max-width: 360px) and (min-width: 330px){
+           .jumbotron.container{
+              width: 95%;
+          }
+          input#textInput{
+              width: 80%;
+              margin-left: 3rem;
+          }
+          input#submit{
+              margin-left: 11.5rem;
+              font-size: 12px
+          }
+       }
+        @media(max-width: 375px) and (min-width: 370px){
           .jumbotron.container{
               width: 95%;
           }
@@ -46,7 +65,31 @@
               margin-left: 12rem;
           }
        }
-       @media(max-width: 425px) and (min-width: 380px){
+       @media(max-width: 399px) and (min-width: 380px){
+          input#submit{
+              margin-left: 12rem;
+          }
+          input#textInput{
+              width: 80%;
+              margin-left: 3.5rem;
+          }
+          .container.contact.animated.fadeIn{
+            width: 101%;
+          }
+       }
+       @media(max-width: 414px) and (min-width: 400px){
+          input#textInput{
+              width: 80%;
+              margin-left: 3.5rem;
+          }
+          input#submit{
+              margin-left: 13.5rem;
+          }
+          .container.contact.animated.fadeIn{
+            width: 102%;
+          }
+       }
+       @media(max-width: 425px) and (min-width: 420px){
           .jumbotron.container{
               width: 95%;
           }
@@ -57,8 +100,34 @@
           input#submit{
               margin-left: 13.5rem;
           }
+          .container.contact.animated.fadeIn{
+            width: 101%;
+          }
        }
-       @media(max-width: 768px) and (min-width: 450px){
+       @media(max-width: 499px) and (min-width: 480px){
+          input#textInput{
+              width: 60%;
+              margin-left: 8.5rem;
+          }
+          input#submit{
+              margin-left: 17rem;
+          }
+      
+       }
+       @media(max-width: 699px) and (min-width: 600px){
+          input#submit{
+              margin-left: 25rem;
+              font-size: 12px;
+          }
+          .container.contact.animated.fadeIn{
+            width:101%;
+          }
+          input#textInput{
+            width: 45%;
+            margin-left: 16rem;
+          }
+       }
+       @media(max-width: 768px) and (min-width: 700px){
           .jumbotron.container{
               width: 95%;
           }
@@ -66,19 +135,19 @@
               margin-left: 30rem;
           }
        }
+       @media(max-width: 900px) and (min-width: 800px){
+          input#submit{
+              margin-left: 32.5rem;
+              font-size: 12px;
+          }
+          .container.contact.animated.fadeIn{
+            margin-top: 18rem;
+            width: 101%;
+          }
+       }
       @media(max-width: 1024px) and (min-width: 999px){
          input#submit{
             margin-left: 42rem;
          }
       }
-      @media(max-height: 1366px) and (min-height: 1200px){
-         #contact{
-            margin-top: 12rem;
-         }
-         .jumbotron.container{
-            padding: 14rem 0rem;
-         }
-          input#submit{
-              margin-left: 43rem;
-          }
-      }
+    

@@ -1,164 +1,257 @@
 @import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/style.css");
 @import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/sale_1.css");
 
-td{
-    color: #239B56;
-    padding-left: 3rem;
-    padding-right: 13rem;
-}
-th#sizeCol{
-  padding-left: 2rem;
-}
 @media(max-width: 320px){
-  td{
-    color: #239B56;
-    padding-left: 0rem;
-    padding-right: 6rem;
-  }
-  th#sizeCol{
-    padding-left: 2.7rem;
-  }
-  input#backSearch{
-     font-size: 10px;
-     margin-left: 11rem;
-  }
-  input#submit{
-    margin-left: 37%;
-    margin-bottom: 4rem;
-    font-size: 10px;
+  span.select2.select2-container.select2-container--default{
+     margin-left: 104.5rem;
+  } 
+  .panel.large,.panel.small{
+     margin-left: 2rem;
   }
   input#textInput_1{
-     width: 70%;
-     margin-left: 4.5rem;
-     margin-top: 7rem;
+    margin-left: 4.5rem;
+  }
+  input#submit {
+    margin-left: 36%;
+    font-size: 12px;
+  }
+  .container.contact.animated.fadeIn {
+     width: 104%;
   }
 
 }
-@media(max-width: 375px) and (min-width: 330px){
-   input#inputText1{
-        margin-left: 103.5rem;
-        margin-top: 7rem;
-   } 
-   button.click{
-      margin-top: 7rem;
-   }
-  td{
-    color: #239B56;
-    padding-left: 0rem;
-    padding-right: 8rem;
+@media(max-width: 360px) and (min-width: 330px){
+  span.select2.select2-container.select2-container--default{
+     margin-left: 103.5rem;
+  } 
+  .panel.large{
+     margin-top: 2rem;
+     margin-left: 2rem;
   }
-  input#backSearch{
-     font-size: 10px;
-     margin-left: 13.5rem;
+  .panel.small{
+     margin-left: 2rem;
   }
   input#submit{
-    margin-left: 37%;
-    margin-bottom: 4rem;
-    font-size: 10px;
+    margin-left: 13rem;
+    font-size: 12px;
   }
   input#textInput_1{
+     margin-left: 5.5rem;
      width: 70%;
-     margin-left: 4.5rem;
-     margin-top: 7rem;
+  }
+   .container.contact.animated.fadeIn {
+     width: 104%;
+  }
+}
+@media(max-width: 375px) and (min-width: 370px){
+  span.select2.select2-container.select2-container--default{
+     margin-left: 104.5rem;
+  } 
+  .panel.large,.panel.small{
+     margin-left: 2rem;
+  }
+  input#submit{
+    margin-left: 39%;
+  }
+  input#textInput_1{
+     margin-left: 5.5rem;
+  }
+   .container.contact.animated.fadeIn {
+     width: 104%;
+  }
+
+}
+@media(max-width: 399px) and (min-width: 380px){
+    span.select2.select2-container.select2-container--default{
+    margin-left: 6.5rem;
+   } 
+   .panel.large,.panel.small{
+     margin-left: 2rem;
+   }
+   input#textInput_1 {
+    margin-left: 15%;
+    width: 70%;
+    border: 1px solid lightgrey;
+   }
+   input#submit {
+    margin-left: 38%;
+    margin-bottom: 4rem;
+   }
+    .container.contact.animated.fadeIn {
+     width: 104.5%;
+  }
+}
+@media(max-width: 414px) and (min-width: 400px){
+  span.select2.select2-container.select2-container--default{
+     margin-left: 104.5rem;
+  } 
+  .panel.large,.panel.small{
+     margin-left: 2rem;
+  }
+  input#submit{
+    margin-left: 39%;
+  }
+  input#textInput_1{
+     margin-left: 6rem;
+  }
+   .container.contact.animated.fadeIn {
+     width: 104%;
   }
 
 }
 @media(max-width: 425px) and (min-width: 420px){
-   input#inputText1{
-        margin-left: 103.5rem;
-        margin-top: 7rem;
-   } 
-   button.click{
-      margin-top: 7rem;
-   }
-  td{
-    color: #239B56;
-    padding-left: 0rem;
-    padding-right: 9rem;
+  span.select2.select2-container.select2-container--default{
+     margin-left: 104.5rem;
+  } 
+  .panel.large,.panel.small{
+     margin-left: 2rem;
   }
-  input#backSearch{
-     font-size: 10px;
-     margin-left: 16rem;
+  input#submit{
+    margin-left: 39%;
   }
+  input#textInput_1{
+     margin-left: 6rem;
+  }
+   .container.contact.animated.fadeIn {
+     width: 104%;
+  }
+
+}
+@media(max-width: 499px) and (min-width: 450px){
+  span.select2.select2-container.select2-container--default{
+    margin-left: 11.5rem;
+  } 
+
   input#submit{
     margin-left: 40%;
     margin-bottom: 4rem;
-    font-size: 10px;
+    font-size: 12px;
   }
   input#textInput_1{
      width: 70%;
-     margin-left: 6rem;
+     margin-left: 7rem;
      margin-top: 7rem;
-  }
-
-}
-@media(max-width: 768px) and (min-width: 600px){
-   input#inputText1{
-        margin-left: 77rem;
-        margin-top: 7rem;
-   } 
-   button.click{
-      margin-top: 7rem;
-   }
-  td{
-    color: #239B56;
-    padding-left: 0rem;
-    padding-right: 20rem;
-  }
-  th#sizeQuant{
-    padding-right: 4rem;
-  }
-  input#backSearch{
-     font-size: 10px;
-     margin-left: 32rem;
-  }
-  input#submit{
-    margin-left: 45%;
-    margin-bottom: 4rem;
-    font-size: 10px;
-  }
-  input#textInput_1{
-     width: 45%;
-     margin-left: 20rem;
-     margin-top: 7rem;
-  }
-  datalist{
-    margin-left: -10rem;
   }
   .panel.large{
-    margin-top: 2rem;
+     margin-top: 2rem;
+     margin-left: 2rem;
   }
   .panel.small{
-    margin-top: 4rem;
+    margin-left: 2rem;
   }
-
+  .container.contact.animated.fadeIn {
+     width: 103%;
+  }
 }
-@media(max-width: 1024px) and (min-width: 1000px){
-   input#inputText1{
-        margin-left: 40rem;
-        margin-top: 7rem;
+@media(max-width: 599px) and (min-width: 500px){
+  
+   span.select2.select2-container.select2-container--default{
+    margin-left: 12rem;
    } 
-   button.click{
-      margin-top: 7rem;
-   }
-  td{
-    color: #239B56;
-    padding-left: 0rem;
-    padding-right: 11rem;
+   .panel.large{
+     margin-top: 2rem;
+     margin-left: 2rem;
   }
-  input#backSearch{
-     font-size: 10px;
-     margin-left: 19rem;
+  .panel.small{
+    margin-left: 2rem;
+  }
+   input#textInput_1 {
+    margin-left: 10.5rem;
+    width: 60%;
+   }
+   input#submit {
+    margin-left: 40%;
+   }
+   .container.contact.animated.fadeIn {
+     width: 103%;
+  }
+}
+@media(max-width: 699px) and (min-width: 600px){
+  
+    span.select2.select2-container.select2-container--default{
+    margin-left: 18.5rem;
+   } 
+    .container.contact.animated.fadeIn {
+     width: 102.5%;
+  }
+   .panel.large{
+     margin-left: 2rem;
+     margin-top: 2rem;
+   }
+   .panel.small{
+      margin-left: 2rem;
+   }
+   input#textInput_1 {
+    margin-left: 14.5rem;
+    width: 55%;
+   }
+   input#submit {
+    margin-left: 44%;
+   }
+}
+@media(max-width: 768px) and (min-width: 700px){
+
+  span.select2.select2-container.select2-container--default{
+     margin-left: 78rem;
+  } 
+  .panel.large,.panel.small{
+     margin-left: 2rem;
   }
   input#submit{
-    margin-left: 42%;
-    margin-bottom: 4rem;
-    font-size: 10px;
+    margin-left: 44%;
   }
   input#textInput_1{
-     width: 60%;
-     margin-left: 10rem;
-     margin-top: 7rem;
+    margin-left: 19rem;
+    width: 50%;
+    margin-top: 7rem;
+  }
+   .container.contact.animated.fadeIn {
+     width: 101%;
   }
 
 }
+@media(max-width: 900px) and (min-width: 800px){
+  
+  span.select2.select2-container.select2-container--default{
+    margin-left: 25rem;
+   } 
+   .panel.large{
+     margin-top: 2rem;
+   }
+   input#submit{
+     margin-left: 32rem;
+   }
+    input#textInput_1{
+      width: 40%;
+      margin-left: 22rem;
+  }
+}
+@media(max-width: 1024px) and (min-width: 1000px){
+  span.select2.select2-container.select2-container--default{
+     margin-left: 41rem;
+  } 
+  input#textInput_1{
+     margin-top: 4rem;
+  }
+  .panel.large{
+    margin-top: -3rem;
+  }
+
+}
+@media(max-width: 1440px) and (min-width: 1400px){
+  
+  span.select2.select2-container.select2-container--default{
+    margin-left: 4rem;
+   } 
+   .panel.large{
+     margin-top: -3rem;
+   }
+   input#submit{
+     margin-left: 24rem;
+   }
+    input#textInput_1{
+      width: 50%;
+      margin-left: 14rem;
+  }
+}
+
