@@ -1,9 +1,12 @@
 
-    $(document).ready(function(){
-    var ar = [];
-    // $('#inputText').val(' ');
-       $("#inputText1").keypress(function(){
-         var searchValue = $("#inputText1").val();
+$(document).ready(function(){
+    $(".js-example-basic-single").select2({
+            tags: true,
+            placeholder: 'Search'
+           
+    });
+     var ar = [];
+         var searchValue = $(".js-example-basic-single").val();
          localStorage.setItem('prodSearch',searchValue);
          var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/searchProducts';
          console.log(localStorage.getItem('ware_house'));
@@ -18,21 +21,15 @@
               for(i in wb.allproducts){
                 var $prod = wb.allproducts[i];
                 ar[$prod.name] = $prod.id;
-                $("#dropdown1").append('<option value="'+$prod.name +'" />');
-                if(i>15)
-                  break;
+                $(".js-example-basic-single").append('<option value="'+$prod.name +'">'+ $prod.name + '</option>');
               }
             }
         });
-       });
-
-      $(document).on("change","#inputText1",function() {
-        var value = $("#inputText1").val();
-        // var valArray = value.split("-");
-        // console.log(valArray[0]);
-        console.log(ar[value]);
-        localStorage.setItem('prod_ID',ar[value]);
-        // Do task here
+      $(document).on("change",".js-example-basic-single",function() {
+          var data = $(".js-example-basic-single option:selected").val();
+          console.log(data);
+          console.log(ar[data]);
+          localStorage.setItem('prod_ID',ar[data]);
       });
       $(document).on("click","#submit",function(e){
           var url= 'http://flourish-release.ap-south-1.elasticbeanstalk.com/stocks/returnstock'
@@ -49,8 +46,9 @@
             
           });
           setTimeout(function () {
-             $("#textInput_1,#inputText1").val(' ');
-             $("#result").val(' ');
+             $("#result_1").hide();
+             $("#searchBar").show();
+             $("#textInput_1").val(' ');
           }, 3000); 
         });  
         $("#salelink").click(function(){
