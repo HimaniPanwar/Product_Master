@@ -152,6 +152,6 @@ h3 {
 }
 @media (max-width: 1366px) and (min-width: 1300px){
     button.warehouse_place{
-        width: 66%;
+        width: 80%;
     }
 }

@@ -22,17 +22,12 @@ input#submit{
     border: 1px solid #145A32;
     margin-top: -3rem;
 }
-.panel.small {
+.panel.small,.panel.large {
     height: 50rem;
     max-height: 50rem;
     min-height: 50rem;
+    margin-top: 3rem;
 }
-.panel.large{
-    height: 50rem;
-    max-height: 50rem;
-    min-height: 50rem;
-}
-
 #result_1{
     text-align: center;
     font-size: 17px;
@@ -43,7 +38,7 @@ input#textInput_1:focus,input#textInput_1:active{
 }
 span.select2.select2-container.select2-container--default{
      margin-left: 16rem;
-     margin-top: 1rem;
+     margin-top: 4rem;
 }
 @media(max-width: 320px){
   span.select2.select2-container.select2-container--default{

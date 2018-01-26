@@ -1,5 +1,5 @@
 body {
-	background: url("../images/Best-top-desktop-hd-wall-wood-wallpaper-wood-wallpapers-wall-picture-image-6.png") no-repeat center center fixed;
+	background: url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/images/Best-top-desktop-hd-wall-wood-wallpaper-wood-wallpapers-wall-picture-image-6.png") no-repeat center center fixed;
 	background-size: cover;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
@@ -141,11 +141,11 @@ p.small {
 
 /* Animation Delay */
 #logo {
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 2s;
 }
 
 .login-box {
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
+  animation-duration: 1s;
+  animation-delay: 1s;
 }

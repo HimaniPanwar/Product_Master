@@ -2,6 +2,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  box-shadow: none;
   margin: 0;
   padding: 0;
 
@@ -12,6 +13,7 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
 
 }
 body,
@@ -266,47 +268,42 @@ button.main_item:hover{
 .container.contact.animated.fadeIn {
     background-color: #EAEDED;
     padding-bottom: 34rem;
-    height: 32rem;
+    height: 38rem;
     position: absolute;
     left: 0;
     right: 0;
     width: 100%;
     margin-top: 8rem;
 }
-ul#icons{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0rem;
-    margin-left: 2rem;
+.panel{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    outline-style: none;
 }
-.fa-linkedin{
+h4#icons{
+    font-weight: bold;
+}
+p#contactLink{
+    margin-bottom: 2rem;
+}
+.fa-instagram {
     border: 1px solid #1E1F1E  ;
     border-radius: 50%;
     padding: 1.2rem 1.5rem;
     cursor: pointer;
     color: white;
     background-color: #1E1F1E  ;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
-.fa-github {
-     border: 1px solid #1E1F1E  ;
-    border-radius: 50%;
-    padding: 1.2rem 1.5rem;
-    cursor: pointer;
-    color: white;
-    background-color: #1E1F1E  ;
-    margin-right: 2rem;
-}
-.fa-google {
+.fa-envelope{
     border: 1px solid #1E1F1E  ;
     border-radius: 50%;
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 1.7rem;
     cursor: pointer;
     color: white;
     background-color: #1E1F1E  ;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 .fa-facebook {
     border: 1px solid #1E1F1E;
@@ -315,9 +312,9 @@ ul#icons{
     cursor: pointer;
     color: white;
     background-color: #1E1F1E;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
-.fa-google:hover,.fa-facebook:hover,.fa-github:hover,.fa-linkedin:hover{
+.fa-envelope:hover,.fa-facebook:hover,.fa-instagram:hover{
     color: #239B56; 
     background-color: transparent;
     border: 1px solid #239B56;
@@ -416,19 +413,16 @@ button.warehouse_place{
         font-size: 40px;
         margin-top: 2rem;
     }
-    ul{
-        margin-bottom: 4rem;
-    }
-    section#contact{
-        padding-bottom: 35rem;
-    }
     .navbar-brand>img{
         width: 7rem;
         margin-top: -1rem;
-        margin-left: 2rem;
+        margin-left: 0rem;
     }
     #searchBar{
        margin-left: -101rem;
+    }
+    .container.contact.animated.fadeIn{
+        height: 70rem;
     }
     .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, 
     .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, 
@@ -448,7 +442,9 @@ button.warehouse_place{
     #searchBar{
        margin-left: -99rem;
     }
-
+    .container.contact.animated.fadeIn{
+        height: 70rem;
+    }
 }
 
 @media(max-width: 375px) and (min-width: 330px){
@@ -459,11 +455,8 @@ button.warehouse_place{
         font-size: 40px;
         margin-top: 2rem;
     }
-   ul{
-       margin-bottom: 4rem;
-   }
-    section#contact{
-        padding-bottom: 35rem;
+     .container.contact.animated.fadeIn{
+        height: 70rem;
     }
      .navbar-brand>img{
         width: 7rem;
@@ -501,12 +494,18 @@ button.warehouse_place{
     .input-group-btn>.btn{
        margin-top: 5rem;
     }
+     .container.contact.animated.fadeIn{
+        height: 70rem;
+    }
 }
 @media(max-width: 414px) and (min-width: 400px){
     .navbar-brand>img{
         width: 7rem;
         margin-top: -1rem;
         margin-left: 1rem;
+    }
+     .container.contact.animated.fadeIn{
+        height: 70rem;
     }
     #searchBar{
        margin-left: -95.7rem;
@@ -531,12 +530,8 @@ button.warehouse_place{
         font-size: 40px;
         margin-top: 2rem;
     }
-
-   ul{
-      margin-bottom: 4rem;
-   }
-    section#contact{
-        padding-bottom: 35rem;
+     .container.contact.animated.fadeIn{
+        height: 70rem;
     }
     .navbar-brand>img{
         width: 7rem;
@@ -570,12 +565,18 @@ button.warehouse_place{
     .input-group-btn>.btn{
        margin-top: 2rem;
     }
+     .container.contact.animated.fadeIn{
+        height: 70rem;
+    }
 }
 @media(max-width: 599px) and (min-width: 500px){
     .navbar-brand>img {
       width: 8rem;
       margin-top: -1rem;
       margin-left: 1rem;
+    }
+     .container.contact.animated.fadeIn{
+        height: 70rem;
     }
 }
 @media(max-width: 699px) and (min-width: 600px){
@@ -593,6 +594,9 @@ button.warehouse_place{
     }
     .input-group-btn>.btn{
        margin-top: 2rem;
+    }
+     .container.contact.animated.fadeIn{
+        height: 70rem;
     }
 }
 @media(max-width: 768px) and (min-width: 700px){
@@ -615,8 +619,8 @@ button.warehouse_place{
         margin-top: -30rem;
         margin-left: 36rem;
     }
-     section#contact{
-        padding-bottom: 35rem;
+     .container.contact.animated.fadeIn{
+        height: 70rem;
     }
     .navbar-default .navbar-nav>li>a{
         margin-top: 2rem;
@@ -650,6 +654,9 @@ button.warehouse_place{
     input#textInput{
         margin-left: 2rem;
     }
+     .container.contact.animated.fadeIn{
+        height: 70rem;
+    }
 }
 @media(max-width: 1024px) and (min-width: 999px){
         .container.contact.animated.fadeIn{
@@ -668,6 +675,7 @@ button.warehouse_place{
         margin-left: -29.7rem;
         margin-top: 1rem;
     }
+
 }
 @media(max-width: 1440px) and (min-width: 1420px){
     .modal-content{
