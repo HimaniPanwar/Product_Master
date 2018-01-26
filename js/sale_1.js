@@ -49,7 +49,7 @@
              $("#result_1").hide();
              $("#searchBar").show();
              $("#textInput_1").val(' ');
-          }, 3000); 
+          }, 5000); 
         });  
         $("#salelink").click(function(){
            localStorage.setItem('ware_house',warehouse_id);   

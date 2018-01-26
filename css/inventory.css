@@ -1,5 +1,5 @@
 @import url("http://flourish-release.ap-south-1.elasticbeanstalk.com/static/css/style.css");
-  .col-lg-4{
+  .circular{
        display: flex;
        justify-content: center;
        align-items: center;
